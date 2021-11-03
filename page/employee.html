@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nhân viên</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="m-navbar">
+        <div class="m-nav-top">
+            <div class="m-toggle">
+                <img src="/content/img/toggle.png" alt="">
+            </div>
+            <div class="m-logo">
+                <img src="/content/cukcuk-logo.png" alt="">
+            </div>
+        </div>
+        <div class="m-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="m-icon-submenu">
+                            <img src="/content/icon/dashboard.png" alt="">
+                        </div>
+                        <div class="m-name-submenu">Tổng quan</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="m-icon-submenu">
+                            <img src="/content/icon/report.png" alt="">
+                        </div>
+                        <div class="m-name-submenu">Báo cáo</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="m-icon-submenu">
+                            <img src="/content/icon/dashboard.png" alt="">
+                        </div>
+                        <div class="m-name-submenu">Mua hàng</div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/page/employee.html">
+                        <div class="m-icon-submenu">
+                            <img src="/content/icon/dic-employee.png" alt="">
+                        </div>
+                        <div class="m-name-submenu">Danh mục nhân viên</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="m-icon-submenu">
+                            <img src="/content/icon/setting.png" alt="">
+                        </div>
+                        <div class="m-name-submenu">Thiết lập hệ thống</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="m-main">
+        <div class="m-header">
+            <div class="m-header-left">
+                <select name="" id="" class="m-combobox">
+                    <option value="">Nhà hàng Biển Đông</option>
+                    <option value="">Nhà hàng Sen Hồ</option>
+                </select>
+            </div>
+            <div class="m-header-right">
+                <img class="m-user-avt" src="/content/icon/avatar-default.png" alt="">
+                <div class="m-user-name">Chu Thị Kim Yến</div>
+                <div class="m-icon-option">
+                    <img src="/content/icon/option.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m-content">
+            <div class="m-title">
+                <span>Danh sách nhân viên</span>
+                <button class="m-btn m-btn-icon m-btn-icon-add">Thêm nhân viên</button>
+            </div>
+            <div class="m-row">
+            <div class="m-filter">
+                <input placeholder="Tìm kiếm theo mã hoặc số điện thoại" class="m-input m-input-search"></input>
+                <div class="m-filter-room">
+                    <select name="" id="" class="m-combobox">
+                        <option value="">Tất cả phòng ban</option>
+                        <option value="">Nhà hàng Sen Hồ</option>
+                    </select>
+                </div>
+                <div class="m-filter-job">
+                    <select name="" id="" class="m-combobox">
+                        <option value="">Tất cả vị trí</option>
+                        <option value="">Nhà hàng Sen Hồ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="m-refresh">
+                <button class="m-btn m-btn-icon m-btn-icon-refresh"><img src="/content/icon/refresh.png" alt=""></button>
+            </div>
+        </div>
+            <div class="m-content-main">
+                <table class="m-table">
+                    <thead class="m-text-left">
+                        <tr>
+                            <th>Mã nhân viên</th>
+                            <th>Họ và tên</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                            <th>Điện thoại</th>
+                            <th>Email</th>
+                            <th>Chức vụ</th>
+                            <th>Phòng ban</th>
+                            <th>Mức lương cơ bản</th>
+                            <th>Tình trạng công việc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MF989</td>
+                            <td>Chu Thị Kim Yến</td>
+                            <td>Nữ</td>
+                            <td>20/02/2000</td>
+                            <td>0989601134</td>
+                            <td>kimYen2000@gmail.com</td>
+                            <td>Fresher Web Dev</td>
+                            <td>Phòng sản xuất</td>
+                            <td class="m-text-right">50.000.000</td>
+                            <td>Đang thử việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF990</td>
+                            <td>Trần Thế Kiên</td>
+                            <td>Nam</td>
+                            <td>04/07/2000</td>
+                            <td>0966412366</td>
+                            <td>thekien47hd@gmail.com</td>
+                            <td>Fresher Web Dev</td>
+                            <td>Phòng sản xuất</td>
+                            <td class="m-text-right">50.000.000</td>
+                            <td>Đang thử việc</td>
+                        </tr><tr>
+                            <td>MF989</td>
+                            <td>Chu Thị Kim Yến</td>
+                            <td>Nữ</td>
+                            <td>20/02/2000</td>
+                            <td>0989601134</td>
+                            <td>kimYen2000@gmail.com</td>
+                            <td>Fresher Web Dev</td>
+                            <td>Phòng sản xuất</td>
+                            <td class="m-text-right">50.000.000</td>
+                            <td>Đang thử việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF990</td>
+                            <td>Trần Thế Kiên</td>
+                            <td>Nam</td>
+                            <td>04/07/2000</td>
+                            <td>0966412366</td>
+                            <td>thekien47hd@gmail.com</td>
+                            <td>Fresher Web Dev</td>
+                            <td>Phòng sản xuất</td>
+                            <td class="m-text-right">50.000.000</td>
+                            <td>Đang thử việc</td>
+                        </tr><tr>
+                            <td>MF989</td>
+                            <td>Chu Thị Kim Yến</td>
+                            <td>Nữ</td>
+                            <td>20/02/2000</td>
+                            <td>0989601134</td>
+                            <td>kimYen2000@gmail.com</td>
+                            <td>Fresher Web Dev</td>
+                            <td>Phòng sản xuất</td>
+                            <td class="m-text-right">50.000.000</td>
+                            <td>Đang thử việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF990</td>
+                            <td>Trần Thế Kiên</td>
+                            <td>Nam</td>
+                            <td>04/07/2000</td>
+                            <td>0966412366</td>
+                            <td>thekien47hd@gmail.com</td>
+                            <td>Fresher Web Dev</td>
+                            <td>Phòng sản xuất</td>
+                            <td class="m-text-right">50.000.000</td>
+                            <td>Đang thử việc</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="m-navigation">
+                    <div class="m-paging-left">
+                        Hiển thị 01-10/100 nhân viên
+                    </div>
+                    <div class="m-paging-center">
+                        <div class="m-paging-first"></div>
+                        <div class="m-paging-prev"></div>
+                        <div class="m-paging-number">
+                            <div class="m-page">1</div>
+                            <div class="m-page">2</div>
+                            <div class="m-page">3</div>
+                            <div class="m-page">4</div>
+                            <div class="m-page">5</div>
+                            <div class="m-page">6</div>
+                        </div>
+                        <div class="m-paging-next"></div>
+                        <div class="m-paging-last"></div>
+                    </div>
+                    <div class="m-paging-right">
+                        <select name="" id="" class="m-combobox">
+                            <option value="">10 nhân viên/ trang</option>
+                            <option value="">20 nhân viên/ trang</option>
+                            <option value="">30 nhân viên/ trang</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
