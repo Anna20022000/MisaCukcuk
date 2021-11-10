@@ -20,13 +20,11 @@
 }
 
 button.m-btn.m-btn-icon{
-    background-repeat: no-repeat;
-    background-position: 16px center;
-    background-size: 16px;
-    padding-left: 40px;
+    padding: 0 16px;
+    min-width: unset;
 }
-button.m-btn.m-btn-icon.m-btn-icon-add{
-    background-image: url('../../content/icon/add.png');
+button.m-btn.m-btn-icon i{
+    padding-right: 8px;
 }
 
 /* ====== btn 2 icon ======== */
@@ -57,7 +55,6 @@ button.m-btn.m-btn-icon.m-btn-icon-add{
 }
 .m-btn-save-new .m-btn-icon-left i{
     padding-right: 8px;
-    font-size: 16px;
 }
 .m-btn-save-new .m-btn-icon-right{
     border-radius: 0 4px 4px 0;
@@ -77,4 +74,14 @@ button.m-btn.m-btn-icon.m-btn-icon-refresh{
     border: 1px solid #bbbbbb;
     min-width: 48px;
     padding: 0;
+}
+
+/* Button cancel */
+.m-btn-cancel{
+    background-color: #E9EBEE;
+    color: #000000;
+    min-width: unset;
+}
+.m-btn-cancel:hover{
+    background-color: #bbbbbb;
 }

@@ -1,9 +1,27 @@
 .m-combobox{
-    height: 40px;
+    min-width: 100px;
+    display: inline-block;
     border: 1px solid #bbbbbb;
     border-radius: 4px;
-    min-width: 100px;
 }
-.m-combobox:focus{
-    border-color: #019160;
+.m-combobox:hover{
+    border-color: #019160 ;
+}
+.m-combobox .m-input{
+    border: unset;
+    padding-right: 0;
+}
+
+.m-combobox .m-combobox-btn{
+    border: none;
+    height: 40px;
+    border-left: 1px solid #bbbbbb;
+}
+.m-combobox .m-combobox-btn{
+    padding: 0 12px;
+    background-color: #ffffff;
+    border-radius: 0 4px 4px 0;
+}
+.m-combobox .m-combobox-btn:hover{
+    background-color: #E9EBEE;
 }

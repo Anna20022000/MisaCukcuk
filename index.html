@@ -13,26 +13,67 @@
 <body style="width: 90%; margin: 0 auto;">
     Welcome!
     <a href="/page/employee.html">Nhân viên</a>
+
+    <!-- BUTTON -->
     <div class="m-row">
-        <label for="m-label">1. Button</label>
-        <button class="m-btn">Thêm mới nhân viên</button>
+        <label for="m-label">1. Button & button icon</label>
+
+        <div style="display: flex; justify-content: space-around;">
+            <button class="m-btn">Thêm mới nhân viên</button>
+            <button class="m-btn m-btn-icon"><i class="fa fa-plus"></i>Lập hồ sơ</button>
+            <button class="m-btn-save-new">
+                <span class="m-btn-icon-left">
+                    <i class="far fa-save"></i>Lưu và thêm mới
+                </span>
+                <div class="m-btn-icon-right">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </button>
+        </div>
+
     </div>
+
+    <br><br><br>
+
+    <!-- INPUT -->
     <div class="m-row">
         <label for="m-label">2. Input</label>
-        <input placeholder="Hint text" class="m-input"></input>
-        <input placeholder="Hint text" class="m-input m-input-error"></input>
+        <div style="display: flex; justify-content: space-around;">
+            <input placeholder="Hint text" class="m-input"></input>
+            <div class="m-input-error">
+                <input type="text" class="m-input m-error-notify" placeholder="Error">
+                <div class="m-error-info">Mật khẩu không đúng định dạng
+                    <div class="m-arrow-bottom"></div>
+                </div>
+            </div>
+            <input placeholder="Tìm kiếm thông tin" class="m-input m-input-search"></input>
+        </div>
+
     </div>
+
+    <!-- CALENDAR -->
     <div class="m-row">
-        <label for="m-label">3. Input search</label>
-        <input placeholder="Tìm kiếm thông tin" class="m-input m-input-search"></input>
+        <label for="m-label">3. Input calendar</label>
+        <div class="m-calendar">
+            <div class="m-combobox">
+                <input type="text" class="m-input" placeholder="_ _/_ _/_ _ _ _">
+                <button class="m-combobox-btn">
+                    <i class="fas fa-calendar-alt"></i>
+                </button>
+            </div>
+        </div>
     </div>
+
+    <!-- DROPDOWN -->
     <div class="m-row">
-        <label for="m-label">4. Combobox</label>
-        <select name="" id="" class="m-combobox">
+        <label for="m-label">4. dropdown</label>
+        <select name="" id="" class="m-dropdown">
             <option value="">Nam</option>
             <option value="">Nữ</option>
         </select>
     </div>
+
+    <!-- TABLE -->
     <div class="m-row">
         <label for="m-label">5. Table</label>
         <table class="m-table">
@@ -126,6 +167,8 @@
             </tbody>
         </table>
     </div>
+
+    <!-- NAVIGATION -->
     <div class="m-navigation">
         <div class="m-paging-left">
             Hiển thị 01-10/100 nhân viên
@@ -145,29 +188,48 @@
             <div class="m-paging-last"></div>
         </div>
         <div class="m-paging-right">
-            <select name="" id="" class="m-combobox">
+            <select name="" id="" class="m-dropdown">
                 <option value="">10 nhân viên/ trang</option>
                 <option value="">20 nhân viên/ trang</option>
                 <option value="">30 nhân viên/ trang</option>
             </select>
         </div>
     </div>
+    </div>
 
+    <!-- POP UP -->
     <div class="m-row">
-        <label for="m-label">6. Button icon</label>
-        <div style="display: flex; justify-content: space-around;">
-            <button class="m-btn m-btn-icon m-btn-icon-add">Lập hồ sơ</button>
-            <button class="m-btn-save-new">
-                <span class="m-btn-icon-left">
-                    <i class="fas fa-plus"></i>Lưu và thêm mới
-                </span>
-                <div class="m-btn-icon-right">
-                    <i class="fas fa-chevron-down"></i>
+        <label for="">6. POP UP</label>
+        <button class="m-btn" id="btnShowPopup">Show pop up</button>
+        <div id="dialogPopup">
+            <div class="m-dialog">
+                <div class="m-dialog-header">
+                    <div class="m-dialog-title">
+                        Xóa thông tin khách hàng
+                    </div>
+                    <div class="m-dialog-close">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </div>
-            </button>
+                <div class="m-dialog-content">
+                    <div class="m-popup-icon">
+                        <i class="fa fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="m-popup-text">
+                        Bạn có chắc chắn muốn đóng form nhập thông tin khách hàng không?
+                    </div>
+                </div>
+                <div class="m-dialog-footer">
+                    <button class="m-btn m-btn-cancel">Tiếp tục nhập</button>
+                    <button class="m-btn m-btn-close">Đóng</button>
+                </div>
+            </div>
+            <div class="dialog-background"></div>
         </div>
+
     </div>
-    </div>
+
+    <!-- Chip-status -->
     <div class="m-row">
         <label for="">7. Chip-status</label>
         <div class="m-chip-status">
@@ -178,31 +240,143 @@
             <div class="m-chip m-chip-secondary">Chưa gửi</div>
         </div>
     </div>
+
+    <!-- TOAST MESS -->
     <div class="m-row">
         <label for="">8. Toast messenger</label>
-        <div class="m-toast-status">
+        <button class="m-btn" id="showToast">Show toast</button>
+        <button class="m-btn" id="hideToast">Hide toast</button>
+        <div class="m-toast-status" style="display: none;">
             <div class="m-toast m-toast-danger">
-                <i class="fa fa-exclamation-triangle"></i>
-                Nội dung đi kèm tiêu đề
-                <i class="fas fa-times"></i>
+                <div class="m-toast-icon">
+                    <i class="fa fa-exclamation-triangle"></i>
+                </div>
+                <div class="m-toast-text">
+                    Không thể xóa bản ghi này!
+                </div>
+                <div class="m-toast-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
             <div class="m-toast m-toast-success">
-                <i class="fas fa-check-circle"></i>
-                Nội dung đi kèm tiêu đề
-                <i class="fas fa-times"></i>
+                <div class="m-toast-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="m-toast-text">
+                    Thêm mới bản ghi thành công!
+                </div>
+                <div class="m-toast-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
             <div class="m-toast m-toast-primary">
-                <i class="fas fa-info-circle"></i>
-                Nội dung đi kèm tiêu đề
-                <i class="fas fa-times"></i>
+                <div class="m-toast-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="m-toast-text">
+                    Cập nhật bản ghi thành công!
+                </div>
+                <div class="m-toast-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
             <div class="m-toast m-toast-warning">
-                <i class="fas fa-exclamation-circle"></i>
-                Nội dung đi kèm tiêu đề
-                <i class="fas fa-times"></i>
+                <div class="m-toast-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="m-toast-text">
+                    Dữ liệu đã xóa không thế khôi phục!
+                </div>
+                <div class="m-toast-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- COMBOBOX -->
+    <div class="m-row">
+        <label for="">9. Combo Box</label>
+        <div class="m-combobox">
+            <input type="text" class="m-input" placeholder="Chọn/Nhập thông tin">
+            <button class="m-combobox-btn">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- CHECK BOX -->
+    <div class="row">
+        <label for="">10. Check box</label>
+        <div class="">
+            <input type="checkbox" name="" id="" class="m-checkbox">
+            <input type="checkbox" checked name="" id="" class="m-checkbox">
+        </div>
+    </div>
+
+    <!-- MODAL LARGE-->
+    <div class="m-row">
+        <label for="">6. MODAL LARGE</label>
+        <button class="m-btn" id="btnShowModal">Show modal large</button>
+
+        <div id="" class="m-modal-medium">
+            <div class="m-dialog m-modal">
+                <div class="m-dialog-header">
+                    <div class="m-dialog-title">
+                        Thông tin nhân viên
+                    </div>
+                    <div class="m-dialog-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="m-modal-content">
+                    <div class="m-modal-left"></div>
+                    <div class="m-modal-col"></div>
+                    <div class="m-modal-col"></div>
+                </div>
+                <div class="m-dialog-footer">
+                    <button class="m-btn m-btn-cancel">Tiếp tục nhập</button>
+                    <button class="m-btn m-btn-icon">
+                        <i class="fas fa-save"></i>Lưu
+                    </button>
+                </div>
+            </div>
+            <div class="dialog-background"></div>
+        </div>
+
+    </div>
+
+    <!-- Thư viện JS -->
+    <script src="./lib/jquery/jquery-3.6.0.min.js"></script>
+    <!-- JS dùng chung -->
+    <!-- JS riêng -->
+
+    <script>
+        // document.getElementById('btnShowPopup').addEventListener('click', function () {
+        //     document.getElementById('dialogPopup').style.display = 'block';
+        // });
+
+        $(document).ready(function () {
+            $("#dialogPopup").hide();
+            // show pop up
+            $("#btnShowPopup").click(function () {
+                $("#dialogPopup").show();
+            });
+            $(".m-btn-close").click(function () {
+                $("#dialogPopup").hide();
+            });
+
+            // show toast
+            $("#showToast").click(function () {
+                $(".m-toast-status").show();
+            });
+            $("#hideToast").click(function () {
+                $(".m-toast-status").hide();
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>

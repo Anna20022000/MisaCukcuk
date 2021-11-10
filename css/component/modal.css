@@ -1,0 +1,38 @@
+.m-modal-medium{
+    position: relative;
+}
+.m-modal-medium .m-modal{
+    background-color: #ffffff;
+    position: fixed;
+    width: 70vw;
+    /* height: calc(100vh - 48px); */
+    max-width: unset;
+}
+
+/* MODAL HEADER */
+
+.m-modal .m-dialog-title{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* MODAL CONTENT */
+.m-modal-content{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+.m-modal-content .m-modal-left{
+    width: 30vw;
+    height: 70vh;
+    background-color: chartreuse;
+    box-sizing: border-box;
+}
+.m-modal-content .m-modal-col{
+    width: 40vw;
+    height: 70vh;
+    background-color: rgb(64, 81, 136);
+}
+
+/* MODAL FOOTER */

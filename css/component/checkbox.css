@@ -1,0 +1,18 @@
+input.m-checkbox{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+input.m-checkbox:checked,
+input.m-checkbox:active,
+input.m-checkbox:checked:active{
+    background-color: #019160;
+    background-image: url('/content/font/fontawesome-5.15.1/svgs/solid/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px;
+}
